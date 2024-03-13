@@ -1,8 +1,8 @@
 import img from "../../../public/heroimg.jpg";
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function EventsDetails() {
-//   const params = useParams();
+  const params = useParams();
 
   return (
     <div className="  bg-[#fefefe] m-0 p-0 h-fit w-dvw flex flex-col justify-center items-center text-black px-4 md:mb-8">
