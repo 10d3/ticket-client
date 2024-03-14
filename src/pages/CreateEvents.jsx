@@ -1,8 +1,8 @@
 import img from '../../public/heroimg.jpg'
 function CreateEvents() {
   return (
-    <div className=" bg-[#fefefe] h-fit w-full flex flex-col items-center">
-      <div className="md:w-[66rem] flex flex-col gap-4 justify-center">
+    <div className=" bg-[#fefefe] h-fit w-full flex flex-col items-center overscroll-x-none">
+      <div className="md:w-[66rem] w-[90%] flex flex-col gap-4 justify-center">
         <section className="h-dvh w-full flex flex-col md:flex-row md:flex-nowrap justify-center items-center gap-4">
           <div>
             <h1>Créez votre billetterie en ligne en quelques clics</h1>
