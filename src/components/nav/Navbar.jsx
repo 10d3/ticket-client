@@ -11,9 +11,9 @@ function Navbar() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className=" h-fit p-4 fixed top-0 w-full flex items-center justify-center bg-black text-white z-50 backdrop-blur-xl">
+    <nav className=" h-fit p-4 top-0 w-full flex items-center justify-center bg-black text-white z-50 backdrop-blur-xl">
       {/* navbar for desktop */}
-      <div className=" w-full md:w-[66rem] h-full flex-row justify-between hidden text-white items-center md:flex">
+      <div className=" w-full md:max-w-[70%] h-full flex-row justify-between hidden text-white items-center md:flex">
         <div>
           <Link to="/">Logo</Link>
         </div>
