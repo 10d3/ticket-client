@@ -66,7 +66,7 @@ function UpComing({ data }) {
       <div className="md:max-w-[70%] flex flex-col items-center w-full">
         <div className="w-full h-fit my-16 items-center flex flex-col md:flex-row flex-nowrap md:justify-between">
           <h1 className="text-2xl font-bold">{data}</h1>
-          <div className="flex flex-col md:flex-row flex-nowrap w-3/4 md:w-fit h-fit gap-4">
+          <div className="flex flex-col md:flex-row flex-nowrap w-full md:w-fit h-fit gap-4">
             <div className="flex flex-col w-full md:w-fit">
               {/* <label htmlFor="">Place</label> */}
               <select
