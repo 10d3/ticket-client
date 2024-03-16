@@ -9,10 +9,10 @@ function Routerage() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="events" element={<Event />} />
-      <Route path="events/:id" element={<EventsDetails />} />
-      <Route path="account" element={<Account />} />
-      <Route path="createEvent" element={<CreateEvents />} />
+      <Route path="/events" element={<Event />} />
+      <Route path="/events/:id" element={<EventsDetails />} />
+      <Route path="/account" element={<Account />} />
+      <Route path="/createEvent" element={<CreateEvents />} />
     </Routes>
   );
 }
