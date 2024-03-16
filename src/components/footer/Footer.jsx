@@ -19,7 +19,7 @@ function Footer() {
   return (
     <div className="w-full h-fit md:h-[26.9rem] pt-4 overscroll-x-none relative bottom-0 flex flex-col items-center justify-center bg-[#0A075F] text-white">
       <div className=" w-full md:max-w-[70%] h-5/6 flex flex-col-reverse md:flex-row flex-nowrap items-center justify-center gap-4 md:gap-6">
-        <div className=" w-3/4 md:w-1/3 h-full flex justify-center items-center md:items-start flex-col md:gap-8">
+        <div className=" w-[85%] md:w-1/3 h-full flex justify-center items-center md:items-start flex-col md:gap-8">
           <h1 className="text-2xl font-bold">Logo</h1>
           <div className="flex flex-col gap-4">
             <p className="text-justify">
@@ -39,7 +39,7 @@ function Footer() {
           </div>
         </div>
         <div className=" w-full md:w-1/3 h-full flex flex-row md:flex-row items-center justify-center">
-          <div className=" w-3/4 md:w-1/2 h-full flex items-center justify-center flex-col md:gap-8">
+          <div className=" w-[85%] md:w-1/2 h-full flex items-center justify-center flex-col md:gap-8">
             <h1 className="text-xl font-bold">Plan events</h1>
             <div>
               {links.map((link, i) => (
@@ -49,7 +49,7 @@ function Footer() {
               ))}
             </div>
           </div>
-          <div className=" w-3/4 md:w-1/2 h-full flex items-center justify-center flex-col md:gap-8">
+          <div className=" w-[85%] md:w-1/2 h-full flex items-center justify-center flex-col md:gap-8">
             <h1 className="text-xl font-bold">Logo logo</h1>
             <div>
               {links.map((link, i) => (
@@ -60,7 +60,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className=" w-3/4 md:w-1/3 h-full flex justify-center items-center md:items-start flex-col">
+        <div className=" w-[85%] md:w-1/3 h-full flex justify-center items-center md:items-start flex-col">
           <h1 className="text-2xl font-bold">Stay in the loop</h1>
           <p>
             Join our mailing list to stay in the loop with our newest for Event
@@ -78,7 +78,7 @@ function Footer() {
           </button>
         </div>
       </div>
-      <div className=" w-3/4 md:w-[72rem] h-1/6 mt-2 md:mt-0 p-2 border-t-[0.3px] border-[#fefefe] flex items-center justify-center">
+      <div className=" w-[85%] md:w-[70%] h-1/6 mt-2 md:mt-0 p-2 border-t-[0.3px] border-[#fefefe] flex items-center justify-center">
         <h1>copyright bla</h1>
       </div>
     </div>

@@ -1,14 +1,19 @@
 import img from "../../../public/heroimg.jpg";
 import { useParams } from "react-router-dom";
+import { events } from "../data/data";
 
 function EventsDetails() {
   const params = useParams();
+  const test = params.id;
+  const bon = events.find((event) => {
+    if (event.title === test) {
+      return event.id;
+    }
+  });
 
   return (
     <div className="  bg-[#fefefe] m-0 p-0 h-fit w-full flex flex-col justify-center items-center text-black px-4 md:mb-8">
-      <h1 className=" mt-[5rem] pb-10 flex left-0">
-        events title
-      </h1>
+      <h1 className=" mt-[5rem] pb-10 flex left-0 text-3xl">{bon.title}</h1>
       <div className="md:w-[66rem] flex flex-col md:flex-row gap-4 justify-center ">
         <div className=" flex flex-col gap-4">
           <div className="flex flex-col w-full md:w-2/3 gap-4">
@@ -45,44 +50,44 @@ function EventsDetails() {
           <div className="bg-blue-100 w-full flex flex-col items-center rounded-sm">
             <h1>Details</h1>
             <div>
-                <div className="flex flex-row gap-3">
-                    <span>log</span>
-                    <h1>date</h1>
-                </div>
-                <div className="flex flex-row gap-3">
-                    <span>log</span>
-                    <h1>date</h1>
-                </div>
-                <div className="flex flex-row gap-3">
-                    <span>log</span>
-                    <h1>date</h1>
-                </div>
-                <div className="flex flex-row gap-3">
-                    <span>log</span>
-                    <h1>date</h1>
-                </div>
-                <div className="flex flex-row gap-3">
-                    <span>log</span>
-                    <h1>date</h1>
-                </div>
-                <div className="flex flex-row gap-3">
-                    <span>log</span>
-                    <h1>date</h1>
-                </div>
+              <div className="flex flex-row gap-3">
+                <span>log</span>
+                <h1>date</h1>
+              </div>
+              <div className="flex flex-row gap-3">
+                <span>log</span>
+                <h1>date</h1>
+              </div>
+              <div className="flex flex-row gap-3">
+                <span>log</span>
+                <h1>date</h1>
+              </div>
+              <div className="flex flex-row gap-3">
+                <span>log</span>
+                <h1>date</h1>
+              </div>
+              <div className="flex flex-row gap-3">
+                <span>log</span>
+                <h1>date</h1>
+              </div>
+              <div className="flex flex-row gap-3">
+                <span>log</span>
+                <h1>date</h1>
+              </div>
             </div>
           </div>
           <div className="bg-blue-100 w-full flex flex-col items-center rounded-sm">
             <div className="flex flex-col gap-2">
-                <h1>organizer</h1>
-                <p>Joe</p>
+              <h1>organizer</h1>
+              <p>Joe</p>
             </div>
             <div className="flex flex-col gap-2">
-                <h1>organizer</h1>
-                <p>Joe</p>
+              <h1>organizer</h1>
+              <p>Joe</p>
             </div>
             <div className="flex flex-col gap-2">
-                <h1>organizer</h1>
-                <p>Joe</p>
+              <h1>organizer</h1>
+              <p>Joe</p>
             </div>
           </div>
           <div className=" py-8 mb-8 md:mb-0 bg-blue-100 w-full flex flex-col items-center rounded-sm">

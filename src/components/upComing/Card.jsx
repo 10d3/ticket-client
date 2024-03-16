@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { formatDateFrench } from "../../hook/formatDateFrench";
 function Card({ data }) {
 
@@ -5,13 +6,13 @@ function Card({ data }) {
 
   return (
     <div className="w-[21.5rem] h-[20rem] max-w-sm bg-white border border-gray-200 rounded-lg ">
-      <a href="#">
+      <Link to={`/events/${data.title}`}>
         <img
           className=" rounded-t-lg h-2/3 w-full"
           src="../../../public/heroimg.jpg"
           alt=""
         />
-      </a>
+      </Link>
       <div className="px-5 pb-5 h-1/3 flex flex-col items-center justify-between">
         <div className="w-full">
           <a href="#">
